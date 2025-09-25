@@ -1,0 +1,45 @@
+// Example program
+#include <iostream>
+using namespace std;
+int main() {
+    // Begin 13
+    // Задаємо координати точок
+    int A = 10;
+    int C = 15;
+    int B = 20;
+
+    // Перевірка: C повинна бути між A і B
+    if ((A < C && C < B) || (B < C && C < A)) {
+        int AC = C - A;
+        if (AC < 0) AC = -AC;
+
+        int BC = B - C;
+        if (BC < 0) BC = -BC;
+
+        int result = AC * BC;
+
+        cout << "AC = " << AC << endl;
+        cout << "BC = " << BC << endl;
+        cout << "AC * BC = " << result << endl << endl;
+    }
+
+    // Begin 30
+    double a = 10;
+    double b = 20;
+
+    double S1 = (a * b) / 2;
+
+    cout << "a = " << a << endl;
+    cout << "b = " << b << endl;
+    cout << "Площа трикутника S = " << S1 << endl << endl;
+
+    // Begin 42
+    double d1 = 15;
+    double d2 = 6;
+
+    double S2 = (d1 * d2) / 2;
+ 
+    cout << "Площа ромба S = " << S2 << endl;
+
+    return 0;
+}
